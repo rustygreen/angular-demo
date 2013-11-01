@@ -5,3 +5,8 @@ tmp/**
 node_modules/
 .sass-cache
 .idea
+bower_components
+node_modules
+dist
+.tmp
+.sass-cache

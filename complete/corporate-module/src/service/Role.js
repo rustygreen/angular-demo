@@ -1,4 +1,5 @@
-angular.module('usersRoles').factory('Role', function ($resource, roleConfig) {
+angular.module('corporate').factory('Role', function ($resource, roleConfig) {
+  'use strict';
 
   var defaults = angular.extend({
     url: '',
