@@ -1,0 +1,1 @@
+function Person(a,b){this.firstName=a,this.lastName=b,this.name=a+" "+b}var person=new Person("Rusty","Green");console.log(person.name);

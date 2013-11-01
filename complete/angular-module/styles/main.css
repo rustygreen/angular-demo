@@ -1,4 +1,7 @@
-.user hr{
+.employee hr{
     margin-top: 9px;
     margin-bottom: 9px;
+}
+
+.list-group-item.active{
 }
