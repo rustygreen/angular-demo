@@ -11,7 +11,6 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'bower_components/jquery/jquery.js',
       'bower_components/angular/angular.js',
       'bower_components/angular-route/angular-route.js',
       'bower_components/angular-resource/angular-resource.js',
@@ -21,25 +20,14 @@ module.exports = function(config) {
 
       'bower_components/angular-mocks/angular-mocks.js',
 
-      'http://js.arcgis.com/3.7/',
-
-      // Module definitions.
-      'modules/core/core.js',
-      'modules/charting/charting.js',
-      'modules/display/display.js',
-      'modules/lrs/lrs.js',
-      'modules/mapping/mapping.js',
-      'modules/plugins/plugins.js',
-      'modules/resource/resource.js',
+      // Module definition.
+      'src/config.js',
 
       // Module code.
-      'modules/core/**/*.js',
-      'modules/charting/**/*.js',
-      'modules/display/**/*.js',
-      'modules/lrs/**/*.js',
-      'modules/mapping/**/*.js',
-      'modules/plugins/**/*.js',
-      'modules/resource/**/*.js'
+      'src/**/*.js',
+
+      // Tests.
+      'test/**/*.js'
     ],
 
     // list of files / patterns to exclude
@@ -65,7 +53,7 @@ module.exports = function(config) {
     // - Safari (only Mac)
     // - PhantomJS
     // - IE (only Windows)
-    browsers: ['IE'],
+    browsers: ['Chrome'],
 
 
     // Continuous Integration mode
