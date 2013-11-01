@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "name": "Super User",
+    "description": "Access to everything"
+  },
+  {
+    "id": 1,
+    "name": "Tester",
+    "description": "Access to log in to sites for testing purposes"
+  },
+  {
+    "id": 2,
+    "name": "Publisher",
+    "description": "Ability to access and publish new content"
+  }
+]
