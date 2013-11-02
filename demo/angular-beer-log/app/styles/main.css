@@ -1,0 +1,102 @@
+body {
+    background-image: url('../images/beer.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.list-group-item.like {
+    background-color: #d7eed7;
+}
+
+.list-group-item.hate {
+    background-color: #f8e1e0;
+}
+
+.search-item {
+    margin-top: 21px;
+    padding-left: 10px;
+}
+
+.beer-log {
+    /*max-width: 800px;*/
+}
+
+.add-beer-container{
+    padding-bottom: 15px;
+}
+
+.beer {
+
+}
+
+/* When hiding an element */
+.animate-fade-in {
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+
+    opacity: 1;
+}
+
+.animate-fade-in-active {
+    opacity: 0;
+}
+
+/* When showing an element */
+.animate-fade-out {
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+
+    /* this needs to be here to make it visible during the animation
+       since the .ng-hide class is already on the element rendering
+       it as hidden. */
+    display: block !important;
+    opacity: 0;
+}
+
+.animate-fade-out-active {
+    opacity: 1;
+}
+
+.beer.ng-enter,
+.beer.ng-leave,
+.beer.ng-move {
+    -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+}
+
+.beer.ng-enter {
+    top: -10px;
+    opacity: 0;
+}
+
+.beer.ng-enter.ng-enter-active {
+    left: 0;
+    opacity: 1;
+}
+
+.beer.ng-leave {
+    left: 0;
+    opacity: 1;
+}
+
+.beer.ng-leave.ng-leave-active {
+    top: -10px;
+    opacity: 0;
+}
+
+.beer.ng-move {
+    opacity: 0.5;
+}
+
+.beer.ng-move.ng-move-active {
+    opacity: 1;
+}
