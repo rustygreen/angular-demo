@@ -189,8 +189,8 @@ module.exports = function (grunt) {
     'clean:dist',
     'concat',
     'ngmin',
-    'uglify'
-//    'ngdocs'
+    'uglify',
+    'ngdocs'
   ]);
 
   grunt.registerTask('default', [
