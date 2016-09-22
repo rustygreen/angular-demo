@@ -1,2 +1,1 @@
-angular-demo
-============
+# Rapid Development <small>with the AngularJS ecosystem</small>
